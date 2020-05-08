@@ -9,7 +9,7 @@ import {TodoList} from '../containers/TodoList';
 
 export class Navbar extends Component {
 
-  render(): React.ReactElement<Navbar, string> {
+  render() {
     return (
         <Router>
           <ul className="nav nav-pills">
@@ -23,7 +23,7 @@ export class Navbar extends Component {
           <div className="row">
             <Switch>
               <Route path="/done">
-                <DoneList/>
+                <DoneList />
               </Route>
               <Route path="/">
                 <TodoList/>
