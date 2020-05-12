@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
 import "./App.css";
-import { Navbar } from "./features/navbar/navbar";
+import { Navbar } from "./components/navbar";
 import { connect, useDispatch } from "react-redux";
 import { loadTodos } from "./features/todo/store/todoSlice";
-import { AppDispatch } from "./store";
+import { AppDispatch } from "./store/store";
 
 const App: React.FC = () => {
   const dispatch = useDispatch();

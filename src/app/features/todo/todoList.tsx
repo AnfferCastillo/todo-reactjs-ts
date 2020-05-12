@@ -3,7 +3,7 @@ import { Todo } from "./models/todo";
 import { useSelector } from "react-redux";
 import { RootState } from "../../store/rootReducer";
 import { selectTodos } from "./store/todoSlice";
-import TodoItem from "../components/todoItem";
+import TodoItem from "../../components/todoItem";
 import AddTodo from "./addTodo";
 
 interface TodoListProps {

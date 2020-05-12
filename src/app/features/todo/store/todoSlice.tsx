@@ -4,7 +4,7 @@ import {
   createEntityAdapter,
 } from "@reduxjs/toolkit";
 import { Todo } from "../models/todo";
-import { AppThunk } from "../../../store";
+import { AppThunk } from "../../../store/store";
 import { fetchTodos } from "../todoService";
 
 const todosAdapter = createEntityAdapter<Todo>();
