@@ -1,16 +1,15 @@
 import React, { useEffect } from "react";
+import { useDispatch } from "react-redux";
 import "./App.css";
 import { Navbar } from "./components/navbar";
-import { connect, useDispatch } from "react-redux";
 import { loadTodos } from "./features/todo/store/todoSlice";
-import { AppDispatch } from "./store/store";
 
 const App: React.FC = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
     dispatch(loadTodos());
-  }, []);
+  }, [dispatch]);
 
   return (
     <div className="justify-content-center">
